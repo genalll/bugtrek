@@ -1,0 +1,28 @@
+.result-container__more{
+    border: none;
+    width: 284px;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+    margin-bottom: 80px;
+    margin-top: 64px;
+}
+.result-container__more:hover{
+    opacity: 0.9;
+}
+
+@media screen and (min-width:320px) and  (max-width:768px){
+    .result-container__more{
+        margin-bottom: 40px;
+        margin-top: 22px;
+        width: 240px;
+        height: 56px;
+    }
+}
+

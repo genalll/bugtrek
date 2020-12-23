@@ -37,6 +37,9 @@
 @import url("../blocks/contacts__type_socials.css");
 @import url("../blocks/lincks_footer.css");
 @import url("../blocks/section-title_black.css");
+@import url("../blocks/card/card__hero-button.css");
+@import url("../blocks/card/card.css");
+@import url("../blocks/result-container/result-container.css");
 
 .popup{
     padding: 0;

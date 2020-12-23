@@ -1,0 +1,8 @@
+.card__link{
+    text-decoration: none;
+    display: flex;
+    margin-left: 24px;
+    color:#1F232B;
+    text-transform: uppercase;
+   
+}
