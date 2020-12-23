@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="sursepopup/index.css">
+    <title>Demo site</title>
+</head>
+<body class="page">
+    <div class="containerpopup popup_is-opened">
+        <div class="popup" id="popupadd">
+            <img src="sursepopup/black.png" alt="" class="popup__logo" id="popupclosebutton">
+            <div class="popup__content">
+              <form class="popup__form" name="new">
+                  <h3 class="popup__title">Новый баг</h3>
+                  <input type="text" name="soft" class="popup__input popup__input_type_program" minlength="2" maxlength="30" required placeholder="Программное обеспечение">
+                  <span id="plac-name-eror" class="eror"></span>
+                  <input  name="date" class="popup__input popup__input_type_link-date" type="text" required placeholder="Дата заполнения">
+                  <span id="linck-name-eror" class="eror"></span>
+                  <input type="text" name="fio" class="popup__input popup__input_type_fio" minlength="2" maxlength="30" required placeholder="ФИО участника">
+                  <span id="plac-name-eror" class="eror"></span>
+                  <input  name="model" class="popup__input popup__input_type_link-model" type="text"  placeholder="Модель смартфона">
+                  <span id="linck-name-eror" class="eror"></span>
+                  <input type="text" name="os" class="popup__input popup__input_type_os" minlength="2" maxlength="30"  placeholder="Название OS">
+                  <span id="plac-name-eror" class="eror"></span>
+                  <input  name="versionos" class="popup__input popup__input_type_link-jsnumber" type="text"  placeholder="Версия операционной системы">
+                  <span id="linck-name-eror" class="eror"></span>
+                  <input type="text" name="bettaname" class="popup__input popup__input_type_version" minlength="2" maxlength="30"  placeholder="Версия релиза беты">
+                  <span id="plac-name-eror" class="eror"></span>
+                  <input  name="bugname" class="popup__input popup__input_type_link-bug name" type="text" required placeholder="Название бага">
+                  <span id="linck-name-eror" class="eror"></span>
+                  <input name="steps" class="popup__input popup__input_type_link-steps" type="textera"  placeholder="Шаги воспроизведения"></input>
+                  <input name="file" class="popup__input popup__input_type_link-file" type="file"  placeholder="Шаги воспроизведения"></input>
+                  <span id="linck-name-eror" class="eror"></span>
+                  <img src="/sursepopup/Present.svg" class="popup__logo" alt="">
+                  <button type="submit" class="button popup__button popup__button_active" name="submit">Отправить баг на проверку</button>
+              </form>
+              <div class="popup__screen-container">
+                  <img src="sursepopup/image1.png" class="popup__scren"alt="скриншоты">
+                  <p class="popup__subtitle">
+                    Должна быть форма входа, механика заведения пользователей на усмотрение команд, в том числе руками админа, чтобы пользователям не нужно было каждый раз вводить свои данные. Вопросами безопасности в рамках решения этой задачи заниматься не нужно.
+                  </p>
+                  <img src="sursepopup/smile.svg" class="popup__logo"alt="смайл">
+              </div>
+              <img class="popup__close" alt="закрыт" src="sursepopup/close.svg">
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+    <header class="header">
+        <img src="images/logo.png" alt="лого">
+        <nav>
+            <ul class="lincks">
+                <li class="lincks__linck"><a href="#"><img src="images/1.svg" alt=""></a></li>
+                <li class="lincks__linck"><a href="#"><img src="images/2.svg" alt=""></a></li>
+                <li class="lincks__linck"><a href="#"><img src="images/3.svg" alt=""></a></li>
+                <li class="lincks__linck"><a href="#"><img src="images/4.svg" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__text-contener">
+                <span class="hero__job">Пользователь банка</span>
+                <h1 class="hero__name">Федор&nbsp;Конюхов</h1>
+                <p class="hero__description">Ищу баги во всем, работаю в эволюционном отсеке</p>
+                <button class="hero-button">Нашел баг!</button>
+            </div>
+            <img class="hero__foto" src="images/avatar.jpg" alt="фото">
+        </section>
+        
+        <section class="features">
+            <h2 class="section-title section-title_black">Достижения</h2>
+            <div class="features__blocks">
+            <article class="features__block">
+                <img class="features__image" src="images/Bar-chart.svg" alt="договор">
+                <h3 class="features__offer">Ваш рейтинг</h3>
+                <p class="features__offer-text">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
+            </article>
+            <article class="features__block">
+                <img class="features__image" src="images//Like.svg" alt="дедлайн">
+                <h3 class="features__offer">Найденные баги</h3>
+                <p class="features__offer-text">В договоре прописана моя  ответственность за срок проекта. Если просрочу — плачу неустойку.</p>
+            </article>
+            <article class="features__block">
+                <img class="features__image" src="images/Case.svg" alt="ценник">
+                <h3 class="features__offer">Бонусы</h3>
+                <p class="features__offer-text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
+            </article>
+            <article class="features__block">
+                <img class="features__image" src="images//Desktop.svg" alt="шаги">
+                <h3 class="features__offer">Текущие задания</h3>
+                <p class="features__offer-text">Показываю работу поэтапно, а не  в последий момент перед  крайним сроком. </p>
+            </article>
+            <article class="features__block">
+                <img class="features__image" src="images/Income.svg" alt="хостинг">
+                <h3 class="features__offer">Вознаграждение</h3>
+                <p class="features__offer-text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.</p>
+            </article>
+            <article class="features__block">
+                <img class="features__image" src="images/Arm.svg" alt="поддержка">
+                <h3 class="features__offer">Результат</h3>
+                <p class="features__offer-text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
+            </article>
+            </div>
+        </section>
+        
+        
+        <section class="contacts">
+            <h2 class="section-title">Cвязаться с куратором</h2>
+            <article class="contacts__block">
+                <form action="#" class="contacts__form">
+                    <p class="contacts__formtext">Можете просто оставить заявку, я позвоню вам сегодня</p>
+                    <input type="text" name="fio" placeholder="Ваше имя" class="contacts__input" id="fio">
+                    <input type="text" name="phone" placeholder="Ваш телефон" class="contacts__input contacts__input_phone" id="phone">
+                    <button class="hero-button hero-button_contacts" >связаться с куратором</button>
+                 </form>
+            <div class="contacts__text">
+                
+                <ul class="contacts__dates">
+                    <li class="contacts__data">
+                       <h3 class="contacts__type">Телефон</h3>
+                       <p class="contacts__value">+7 999 123 45 67</p>
+                    </li>
+                    <li class="contacts__data">
+                        <h3 class="contacts__type">Почта</h3>
+                        <p class="contacts__value">ivanov@mail.ru</p>
+                    </li>
+                </ul>
+                
+                <div class="contacts__socials">
+                    <h3 class="contacts__type contacts__type_socials">Соцсети</h3>
+                    <ul class="contacts__social">
+                        <li><a href="#" class="contacts__social-link">t.me/ivanov</a></li>
+                        <li><a href="#" class="contacts__social-link">vk.me/ivanov</a></li>
+                    </ul>
+                </div>
+                <a class="contacts__confidential" href="#">Политика конфиденциальности</a>
+
+
+            </div>
+            </article>
+        </section>
+
+
+        
+
+
+    </main>
+</body>
+<script  src="sursepopup/parse.js"></script>
+</html>

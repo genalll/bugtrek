@@ -1,0 +1,11 @@
+.hero{
+   margin:0 auto;
+   margin-top: 124px;
+   margin-bottom:66px;
+   max-width: 936px;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content:space-around;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}

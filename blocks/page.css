@@ -1,0 +1,9 @@
+.page{
+    font-family: Graphik LC;
+    max-width: 100%;
+    background: #343944;;
+}
+a:hover{
+    opacity: .7;
+    transition: 1s;
+}

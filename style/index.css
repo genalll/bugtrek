@@ -1,0 +1,159 @@
+@import url("../font/roboto/roboto.css");
+@import url("../blocks/page.css");
+@import url("../blocks/header.css");
+@import url("../blocks/header__logo.css");
+@import url("../blocks/lincks.css");
+@import url("../blocks/lincks__linck.css");
+@import url("../blocks/hero.css");
+@import url("../blocks/hero__job.css");
+@import url("../blocks/hero__name.css");
+@import url("../blocks/hero__description.css");
+@import url("../blocks/hero__foto.css");
+@import url("../blocks/hero__text-contener.css");
+@import url("../blocks/hero-button.css");
+@import url("../blocks/section-title.css");
+@import url("../blocks/features.css");
+@import url("../blocks/features__blocks.css");
+@import url("../blocks/features__block.css");
+@import url("../blocks/features__image.css");
+@import url("../blocks/features__offer.css");
+@import url("../blocks/features__offer-text.css");
+@import url("../blocks/contacts.css");
+@import url("../blocks/contacts__block.css");
+@import url("../blocks/contacts__form.css");
+@import url("../blocks/contacts__formtext.css");
+@import url("../blocks/contacts__input.css");
+@import url("../blocks/hero-button_contacts.css");
+@import url("../blocks/contacts__input_phone.css");
+@import url("../blocks/contacts__text.css");
+@import url("../blocks/contacts__type.css");
+@import url("../blocks/contacts__dates.css");
+@import url("../blocks/contacts__data.css");
+@import url("../blocks/contacts__value.css");
+@import url("../blocks/contacts__socials.css");
+@import url("../blocks/contacts__social.css");
+@import url("../blocks/contacts__social-link.css");
+@import url("../blocks/contacts__confidential.css");
+@import url("../blocks/contacts__type_socials.css");
+@import url("../blocks/lincks_footer.css");
+@import url("../blocks/section-title_black.css");
+
+.popup{
+    padding: 0;
+    min-width: 320px;
+    max-width: 1080px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #F2F6F9;
+    margin-bottom:20px;
+    margin-top:20px;
+    border-radius: 1%;
+    padding-bottom: 20px;
+    position: relative;
+}
+.popup__logo{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+.popup__content{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.popup__title{
+    padding: 0;
+    margin:0;
+    border: none;
+    text-align: center;
+    font-family: Graphik LC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    margin-bottom:29px;
+}
+.popup__form{
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup__input {
+    padding: 0;
+    margin:0;
+    border: none;
+    width:300px;
+    height:56px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 0px 0px 16px;
+    background:#FFFFFF;
+    font-family: Graphik LC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #535E6E;
+    margin-bottom:29px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.popup__input_type_link-steps{
+    max-width: 320px;
+    height: 118px;
+}
+.button{
+    padding: 0;
+    margin:0;
+    border: none;
+    width: 256px;
+    height: 56px;
+    background: #02BAE8;
+    font-family: Graphik LC;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.popup__scren{
+    width:320px;
+    margin-top:60px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.popup__screen-container{
+    display: flex;
+    flex-direction: column;
+}
+.popup__close{
+   position: absolute;
+   right:15px;
+   top:15px;
+}
+
+.popup__subtitle{
+    width:300px;
+    max-height: 400px;
+    overflow: hidden;
+    justify-content: left;
+    font-family: Graphik LC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 5px;
+}
+
+
+

@@ -1,0 +1,6 @@
+.hero__foto{
+    width: 300px;
+    border-radius: 50%;
+    border: solid 6px white;
+    flex-shrink: 0.5;
+}
