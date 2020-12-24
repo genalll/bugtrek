@@ -2,8 +2,10 @@
     font-family: Graphik LC;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    margin-left: 24px;
+    font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.01em;
-    color: #1F232B;
+    color: red;
+    text-transform: uppercase;
 }
