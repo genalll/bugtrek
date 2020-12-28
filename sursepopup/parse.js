@@ -1,27 +1,11 @@
-date=document.querySelector(".popup__input_type_link-date");
-os=document.querySelector(".popup__input_type_program");
-osBrauser=document.querySelector(".popup__input_type_os");
-popup=document.querySelector(".containerpopup");
-popupClose=document.querySelector(".popup__close");
-heroButton=document.querySelector(".hero-button");
+const date=document.querySelector(".popup__input_type_link-date");
+const os=document.querySelector(".popup__input_type_program");
+const osBrauser=document.querySelector(".popup__input_type_os");
+const popup=document.querySelector(".containerpopup");
+const popupClose=document.querySelector(".popup__close");
+const heroButton=document.querySelector(".hero-button");
 const cardContainer=document.querySelector(".result-container__cards");
-
-function parseDate()
-{
-    var now = new Date();
-    return now.getDate()+ " " + (now.getMonth()+1) +" " + now.getFullYear() + " " + now.getHours() + " часов: " + now.getMinutes()+" мин"
-}
-
-
-function osPareae(){
-    return window.navigator.userAgent.split("; ")[1];
-}
-
-function brauserPareae(){
-    return window.navigator.userAgent.split(" ")[0];
-}
-
-
+const buttonSubmit=document.querySelector(".popup__button_active");
 
 class NewsCard {
     constructor(cardObj) {
@@ -54,11 +38,11 @@ class NewsCard {
         cardbutton.classList.add("card__hero-button");
         
 
-        cardtitle.textContent = "Название бага"
+        cardtitle.textContent = this.title
         cardData.textContent = this.data
         cardResurse.textContent = this.brauser
         cardtime.textContent = this.os
-        cardDescription.textContent = "Описание бага"
+        cardDescription.textContent = this.description
         cardbutton.textContent = "Решать проблему"
 
 
@@ -72,6 +56,21 @@ class NewsCard {
         return this.cardElement;
     }
 
+}
+
+function parseDate()
+{
+    var now = new Date();
+    return now.getDate()+ " " + (now.getMonth()+1) +" " + now.getFullYear() + " " + now.getHours() + " часов: " + now.getMinutes()+" мин"
+}
+
+
+function osPareae(){
+    return window.navigator.userAgent.split("; ")[1];
+}
+
+function brauserPareae(){
+    return window.navigator.userAgent.split(" ")[0];
 }
 
 
@@ -93,18 +92,18 @@ document.addEventListener('click', openImagePopup);
 
 
 
-
-
-
-testCardObj={
-    data:"222 октября, 20202 102:402",
-    title:"Тестовая карта",
-    description:"ываыфвафлоываофывжаоыфжваоыфжваофыжваоыфвжа",
-    os:"windows",
-    brauser: "супер браузер скачать бесплатно"
+buttonSubmit.onclick=function addCardBug(event,testCardObj={
+    data:date.value,
+    title:document.querySelector(".name").value,
+    description:document.querySelector(".popup__input_type_link-steps").value,
+    os:os.value,
+    brauser: osBrauser.value
+}){
+        event.preventDefault();
+        console.log(testCardObj)
+        test= new NewsCard(testCardObj);
+        cardContainer.appendChild(test.cardCreate());
+        popup.classList.toggle('popup_is-opened');
+        
 }
-test= new NewsCard(testCardObj);
 
-for (let i = 0; i < 10; i++) { 
-    cardContainer.appendChild(test.cardCreate());
-  }
